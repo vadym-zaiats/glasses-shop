@@ -1,0 +1,8 @@
+@import "./variables.scss";
+
+@mixin flex-center($fd: dddd) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: center;
+  align-items: center;
+}
