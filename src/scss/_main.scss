@@ -2,6 +2,8 @@
   @include font;
 }
 .main {
+  margin: 0 auto;
+  max-width: 1200px;
   background: $wall;
   &_nav {
     @include display-flex(row, space-around);

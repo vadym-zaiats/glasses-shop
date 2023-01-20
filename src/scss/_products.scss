@@ -1,16 +1,77 @@
 .products {
+  margin: 30px auto;
+  max-width: 1200px;
   &_title {
     @include font($fs: 44px, $lh: 50px);
-    text-align: left;
+    max-width: 950px;
   }
-  &-photos {
+  &_photos {
     @include display-flex($jc: space-around);
-    &_aside {
+    position: relative;
+    margin-top: 35px;
+    &-main {
+      position: absolute;
+      top: 0;
+      left: 0;
+      & p {
+        margin-top: 6px;
+      }
+      &__coast {
+        position: absolute;
+        right: 15%;
+      }
+      &__colors {
+        position: absolute;
+        top: 17px;
+        right: 22px;
+        & img {
+          border: 1px solid #fff;
+        }
+        & img:hover {
+          cursor: pointer;
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+          border: none;
+        }
+      }
     }
-    &_gallery {
+    &-gallery {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
+      row-gap: 20px;
+      column-gap: 30px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      &__product {
+        position: relative;
+        &--coast {
+          position: absolute;
+          right: 30%;
+        }
+        &--colors {
+          position: absolute;
+          top: 17px;
+          right: 20px;
+          & img {
+            border: 1px solid #fff;
+          }
+          & img:hover {
+            cursor: pointer;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+            border: none;
+          }
+        }
+        &--label {
+          @include font;
+          border: 1px solid #1a1818;
+          border-radius: 40px;
+          padding: 4px 9px;
+          position: absolute;
+          top: 18px;
+          left: 18px;
+        }
+      }
     }
   }
 }
