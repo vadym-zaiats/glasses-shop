@@ -1,0 +1,16 @@
+.products {
+  &_title {
+    @include font($fs: 44px, $lh: 50px);
+    text-align: left;
+  }
+  &-photos {
+    @include display-flex($jc: space-around);
+    &_aside {
+    }
+    &_gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+  }
+}

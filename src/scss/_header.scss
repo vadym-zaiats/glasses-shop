@@ -1,1 +1,6 @@
-
+.header {
+  @include display-flex();
+  & p {
+    padding: 8px;
+  }
+}

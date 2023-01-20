@@ -1,8 +1,26 @@
 @import "./variables.scss";
 
-@mixin flex-center($fd: dddd) {
+@mixin font(
+  $fw: 400,
+  $fs: 12px,
+  $lh: 14px,
+  $tt: uppercase,
+  $color: $black-text,
+  $ls: 0.6px
+) {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  text-transform: $tt;
+  color: $color;
+  letter-spacing: $ls;
+}
+
+@mixin display-flex($fd: row, $jc: center, $ai: center) {
   display: flex;
   flex-direction: $fd;
-  justify-content: center;
-  align-items: center;
+  justify-content: $jc;
+  align-items: $ai;
 }

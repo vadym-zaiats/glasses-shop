@@ -4,54 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&family=Montserrat:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./dist/scss/index.min.css" />
     <script src="./dist/js/scripts.min.js" defer></script>
-    <title>Real estate parade</title>
+    <title>Glasses Shop</title>
   </head>
   <body>
-    <header class="header">
-      <p>Achetez Meti au 20 rue des Martyrs Paris 9</p>
-    </header>
-    <section class="main">
-      <nav class="main_nav">
-        <ul class="main_nav-product">
-          <li>Optiques</li>
-          <li>Solaires</li>
-          <li>Voir Juste</li>
-        </ul>
-        <ul class="main_nav-service">
-          <li>Wishlist</li>
-          <li>Examen de vue</li>
-          <li>Panier</li>
-        </ul>
-      </nav>
-      <h2>VOIR JUSTE</h2>
-      <button>Nos meilleures ventes</button>
-    </section>
-    <section class="products">
-      <h2 class="products_title">
-        Meti démocratise l'optique haut de gamme. Nous sommes créateurs et
-        opticiens.
-      </h2>
-      <div class="products-photos">
-        <div class="products-photos_left">
-          <div><img src="./src/img/IMAGE.png" alt="?" /></div>
+    <div id="root">
+      <header class="header">
+        <p class="header_text">Achetez Meti au 20 rue des Martyrs Paris 9</p>
+      </header>
+      <section class="main">
+        <nav class="main_nav">
+          <ul class="main_nav-product">
+            <li>Optiques</li>
+            <li>Solaires</li>
+            <li>Voir Juste</li>
+          </ul>
+          <ul class="main_nav-service">
+            <li>Wishlist</li>
+            <li>Examen de vue</li>
+            <li>Panier</li>
+          </ul>
+        </nav>
+        <div class="main_content">
+          <h2 class="main_content-title">VOIR JUSTE</h2>
+          <button class="main_content-button">Nos meilleures ventes</button>
         </div>
-        <div class="products-photos_right">
-          <div><img src="./src/img/IMAGE (1).png" alt="?" /></div>
-          <div><img src="./src/img/IMAGE (2).png" alt="?" /></div>
-          <div><img src="./src/img/IMAGE (3).png" alt="?" /></div>
-          <div><img src="./src/img/IMAGE (4).png" alt="?" /></div>
-          <div><img src="./src/img/IMAGE (5).png" alt="?" /></div>
-          <div><img src="./src/img/IMAGE (6).png" alt="?" /></div>
+      </section>
+      <section class="products">
+        <h2 class="products_title">
+          Meti démocratise l'optique haut de gamme. Nous sommes créateurs et
+          opticiens.
+        </h2>
+        <div class="products-photos">
+          <aside class="products-photos_aside">
+            <div><img src="./src/img/IMAGE.png" alt="?" /></div>
+          </aside>
+          <div class="products-photos_gallery">
+            <div><img src="./src/img/IMAGE (1).png" alt="?" /></div>
+            <div><img src="./src/img/IMAGE (2).png" alt="?" /></div>
+            <div><img src="./src/img/IMAGE (3).png" alt="?" /></div>
+            <div><img src="./src/img/IMAGE (4).png" alt="?" /></div>
+            <div><img src="./src/img/IMAGE (5).png" alt="?" /></div>
+            <div><img src="./src/img/IMAGE (6).png" alt="?" /></div>
+            <div><img src="./src/img/IMAGE (7).png" alt="?" /></div>
+            <div><img src="./src/img/IMAGE (8).png" alt="?" /></div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
 </html>

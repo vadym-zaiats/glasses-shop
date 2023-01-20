@@ -1,0 +1,36 @@
+#root {
+  @include font;
+}
+.main {
+  background: $wall;
+  &_nav {
+    @include display-flex(row, space-around);
+    &-product {
+      @include display-flex;
+      & li {
+        padding: 20px 4px 0 0;
+      }
+    }
+    &-service {
+      @include display-flex;
+      & li {
+        padding: 0 4px;
+      }
+    }
+  }
+  &_content {
+    padding: 250px 0;
+    @include display-flex($fd: column);
+    &-title {
+      @include font($fs: 54px, $color: #fff);
+    }
+    &-button {
+      @include font($color: #fff);
+      margin-top: 30px;
+      padding: 13px 21px;
+      background: #a05b4e;
+      border-radius: 30px;
+      border: none;
+    }
+  }
+}
