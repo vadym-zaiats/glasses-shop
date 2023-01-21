@@ -1,0 +1,31 @@
+.producer {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 800px;
+  background: url("../../dist/img/IMAGE\(12\).png") no-repeat center center;
+  //   background-size: cover;
+  &_content {
+    padding: 30px 0 0 30px;
+    & h2 {
+      @include font(
+        $fs: 49px,
+        $lh: 54px,
+        $ls: 1.08px,
+        $color: white,
+        $tt: none
+      );
+    }
+    & p {
+      padding: 13px 0 40px 0;
+      max-width: 370px;
+      @include font($fs: 24px, $lh: 29px, $color: white, $tt: none, $ls: 1px);
+    }
+    & button {
+      @include font($color: white);
+      padding: 13px 21px;
+      background: $button;
+      border-radius: 30px;
+      border: none;
+    }
+  }
+}
