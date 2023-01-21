@@ -18,7 +18,14 @@
     & p {
       padding: 13px 0 40px 0;
       max-width: 370px;
-      @include font($fs: 24px, $lh: 29px, $color: white, $tt: none, $ls: 1px);
+      @include font(
+        $fw: 300,
+        $fs: 24px,
+        $lh: 29px,
+        $color: white,
+        $tt: none,
+        $ls: 1px
+      );
     }
     & button {
       @include font($color: white);

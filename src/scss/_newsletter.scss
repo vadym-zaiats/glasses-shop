@@ -1,0 +1,49 @@
+.newsletter {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: $button;
+  position: relative;
+  @include display-flex($fd: column);
+  &_title {
+    @include font($lh: 18px, $color: $milk-white);
+    padding: 220px 0 47px 0;
+    text-align: center;
+  }
+  &_content {
+    max-width: 470px;
+    text-align: center;
+    @include font(
+      $fw: 300,
+      $fs: 24px,
+      $lh: 29px,
+      $color: $milk-white,
+      $tt: none
+    );
+  }
+  &_input {
+    margin: 30px 0 50px 0;
+    border: 1px solid $milk-white;
+    border-radius: 30px;
+    background-color: $button;
+    width: 35%;
+    height: 40px;
+    position: relative;
+  }
+  &_about {
+    @include display-flex($jc: space-between);
+    @include font($fw: 300, $color: $milk-white);
+    width: 100%;
+    padding: 30px 25px;
+    &-author {
+      color: rgba(241, 241, 222, 0.5);
+    }
+  }
+  &_about::before {
+    width: 99%;
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid $milk-white;
+    bottom: 10px;
+    left: 0;
+  }
+}

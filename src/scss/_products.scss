@@ -4,10 +4,10 @@
   &_title {
     @include font($fs: 44px, $lh: 50px);
     max-width: 950px;
+    margin: 35px 0 35px 0;
   }
   &_photos {
     @include display-flex($jc: space-around, $ai: flex-start);
-    height: 100%;
     &-main {
       @include display-flex($fd: column, $ai: flex-start);
       position: relative;

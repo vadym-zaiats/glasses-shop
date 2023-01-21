@@ -1,0 +1,39 @@
+.shops {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 40px 0 100px 0;
+  &_list {
+    @include font;
+    @include display-flex($jc: space-between);
+  }
+  &_offers {
+    padding: 40px 30px 0 30px;
+    @include display-flex($jc: space-between);
+    &-variant {
+      position: relative;
+      &__content {
+        padding: 0 0 45px 30px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        & p {
+          @include font(
+            $fw: 300,
+            $fs: 43px,
+            $lh: 54px,
+            $ls: 1.08px,
+            $color: white
+          );
+        }
+        & button {
+          @include font($color: white);
+          margin-top: 39px;
+          padding: 13px 21px;
+          background: $button;
+          border-radius: 30px;
+          border: none;
+        }
+      }
+    }
+  }
+}
