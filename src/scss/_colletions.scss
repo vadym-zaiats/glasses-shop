@@ -1,0 +1,30 @@
+.colletions {
+  margin: 100px auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 100px;
+  &_photo {
+    @include display-flex($fd: column);
+  }
+  &_text {
+    @include display-flex($fd: column, $ai: flex-start);
+    padding-left: 50px;
+    & h2 {
+      @include font($fs: 54px, $lh: 61px);
+    }
+    & p {
+      max-width: 380px;
+      @include font($fs: 24px, $lh: 27px, $tt: none);
+      padding: 14px 0 40px 0;
+    }
+    & button {
+      padding: 13px 21px;
+      @include font($color: #fff);
+      background: $button;
+      border-radius: 30px;
+      border: none;
+    }
+  }
+}

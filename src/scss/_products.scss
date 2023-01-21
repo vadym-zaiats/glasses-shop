@@ -6,13 +6,11 @@
     max-width: 950px;
   }
   &_photos {
-    @include display-flex($jc: space-around);
-    position: relative;
-    margin-top: 35px;
+    @include display-flex($jc: space-around, $ai: flex-start);
+    height: 100%;
     &-main {
-      position: absolute;
-      top: 0;
-      left: 0;
+      @include display-flex($fd: column, $ai: flex-start);
+      position: relative;
       & p {
         margin-top: 6px;
       }
@@ -22,8 +20,8 @@
       }
       &__colors {
         position: absolute;
-        top: 17px;
-        right: 22px;
+        top: 20px;
+        right: 20px;
         & img {
           border: 1px solid #fff;
         }
@@ -40,9 +38,7 @@
       grid-template-rows: 1fr 1fr 1fr 1fr;
       row-gap: 20px;
       column-gap: 30px;
-      position: absolute;
-      top: 0;
-      right: 0;
+
       &__product {
         position: relative;
         &--coast {
@@ -66,7 +62,7 @@
           @include font;
           border: 1px solid #1a1818;
           border-radius: 40px;
-          padding: 4px 9px;
+          padding: 4px 8px;
           position: absolute;
           top: 18px;
           left: 18px;
