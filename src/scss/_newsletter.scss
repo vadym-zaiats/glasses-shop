@@ -27,23 +27,23 @@
     background-color: $button;
     width: 35%;
     height: 40px;
-    position: relative;
   }
   &_about {
     @include display-flex($jc: space-between);
     @include font($fw: 300, $color: $milk-white);
     width: 100%;
     padding: 30px 25px;
+    position: relative;
     &-author {
       color: rgba(241, 241, 222, 0.5);
     }
   }
-  &_about::before {
-    width: 99%;
+  &_about::after {
+    width: 1140px;
     content: "";
     position: absolute;
     border-bottom: 1px solid $milk-white;
-    bottom: 10px;
-    left: 0;
+    top: 0;
+    left: 30px;
   }
 }
